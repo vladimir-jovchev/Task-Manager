@@ -1,0 +1,32 @@
+
+// main style -> global style, change variable values
+
+//import google font
+@import url('https://fonts.googleapis.com/css2?family=Lato:400,700|Nunito:400,700');
+
+//colors
+$turquois: #44ddd0;
+$green: #27d7a1;
+$light-green: #45f69e;
+$dark-green: rgb(0, 100, 0);
+$light: #f8f8f8;
+
+
+//Bulma global variables
+$family-sans-serif: "Nunito", sans-serif;
+$primary: $green;
+$link:$light-green;
+
+//Bulma component variables
+$control-border-with: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+//style for whole appliaction
+html {
+    background: linear-gradient(to right top, $turquois, $green);
+}
+
+html, body {
+    height: 100%;
+}
