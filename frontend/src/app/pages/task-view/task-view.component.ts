@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { TaskService } from 'src/app/task.service';
 
 @Component({
   selector: 'app-task-view',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaskViewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private taskService: TaskService) { }
 
   ngOnInit(): void {
   }
 
+ createNewlist(){
+    return this.taskService.createList("TitleTest").subscribe((res: any)=>{
+      console.log(res);
+    });
+  }
+    
 }
+
+
